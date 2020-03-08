@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://shigayuya.github.io/paper-collector-github-page/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shigayuya.github.io/paper-collector-github-page/" rel="alternate" type="text/html" /><updated>2020-03-09T04:59:19+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/feed.xml</id><title type="html">論文まとめ用ページ</title><subtitle>テスト中1</subtitle><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-03-02T00:00:00+09:00</published><updated>2020-03-02T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
+&lt;p&gt;https://arxiv.org/abs/1705.11159&lt;/p&gt;
+
+&lt;p&gt;強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。&lt;/p&gt;
+
+&lt;p&gt;具体的には、方策勾配の手法を用いて学習率を実数値で各ミニバッチごとに推定している。この強化学習は実際に解きたいタスクと同時に学習する。報酬はひとつ前のステップでのlossと現在のlossの差。&lt;/p&gt;
+
+&lt;p&gt;強化学習の状態には概念的にはネットワーク全体の重みとデータを用いるのが適切だがDNNでは困難である。そのため、ミニバッチをネットワークに入力したときの平均損失で代用する。&lt;/p&gt;
+
+&lt;p&gt;学習率が高くなりすぎないようにactorとcriticのネットワークを分離していたり、それぞれ別のデータで学習したりしている。&lt;/p&gt;
+
+&lt;p&gt;mnistとcifer10で実験している。どっちでも良い精度、Adamにも勝ってる。&lt;/p&gt;
+
+&lt;p&gt;強化学習万能説。&lt;/p&gt;
+
+&lt;p&gt;まあ、強化学習のパラメータを調整する手間が増えるのが難点かなっとも思う。&lt;/p&gt;
+
+&lt;p&gt;あと、あまりにもセンシティブなパラメータを学習するには初期がランダム行動過ぎてちょっと怖い。&lt;/p&gt;
+
+&lt;p&gt;事前にいくつかのパラメータで学習したデータ集めて事前学習とかしないとダメかもね。&lt;/p&gt;
+
+&lt;p&gt;浸透率を自動調整したい人とか、潜在変数の数を自動調整したい人とかにお勧めしたい手法。&lt;/p&gt;
+
+&lt;p&gt;個人的には浸透率が0になったときのlossを報酬にして、浸透率調整したら面白いんじゃねっと思ってる。&lt;/p&gt;
+
+&lt;h3 id=&quot;タグ一覧&quot;&gt;タグ一覧&lt;/h3&gt;
+
+&lt;ul&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/paper-collector-github-page/&quot;&gt;Top Page&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159</summary></entry><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-02-04T00:00:00+09:00</published><updated>2020-02-04T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
+&lt;p&gt;https://arxiv.org/abs/1705.11159&lt;/p&gt;
+
+&lt;p&gt;強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。&lt;/p&gt;
+
+&lt;p&gt;具体的には、方策勾配の手法を用いて学習率を実数値で各ミニバッチごとに推定している。この強化学習は実際に解きたいタスクと同時に学習する。報酬はひとつ前のステップでのlossと現在のlossの差。&lt;/p&gt;
+
+&lt;p&gt;強化学習の状態には概念的にはネットワーク全体の重みとデータを用いるのが適切だがDNNでは困難である。そのため、ミニバッチをネットワークに入力したときの平均損失で代用する。&lt;/p&gt;
+
+&lt;p&gt;学習率が高くなりすぎないようにactorとcriticのネットワークを分離していたり、それぞれ別のデータで学習したりしている。&lt;/p&gt;
+
+&lt;p&gt;mnistとcifer10で実験している。どっちでも良い精度、Adamにも勝ってる。&lt;/p&gt;
+
+&lt;p&gt;強化学習万能説。&lt;/p&gt;
+
+&lt;p&gt;まあ、強化学習のパラメータを調整する手間が増えるのが難点かなっとも思う。&lt;/p&gt;
+
+&lt;p&gt;あと、あまりにもセンシティブなパラメータを学習するには初期がランダム行動過ぎてちょっと怖い。&lt;/p&gt;
+
+&lt;p&gt;事前にいくつかのパラメータで学習したデータ集めて事前学習とかしないとダメかもね。&lt;/p&gt;
+
+&lt;p&gt;浸透率を自動調整したい人とか、潜在変数の数を自動調整したい人とかにお勧めしたい手法。&lt;/p&gt;
+
+&lt;p&gt;個人的には浸透率が0になったときのlossを報酬にして、浸透率調整したら面白いんじゃねっと思ってる。&lt;/p&gt;
+
+&lt;h3 id=&quot;タグ一覧&quot;&gt;タグ一覧&lt;/h3&gt;
+
+&lt;ul&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/paper-collector-github-page/&quot;&gt;Top Page&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159</summary></entry><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/02/02/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-02-02T00:00:00+09:00</published><updated>2020-02-02T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/02/02/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/02/02/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
+&lt;p&gt;https://arxiv.org/abs/1705.11159&lt;/p&gt;
+
+&lt;p&gt;強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。&lt;/p&gt;
+
+&lt;p&gt;具体的には、方策勾配の手法を用いて学習率を実数値で各ミニバッチごとに推定している。この強化学習は実際に解きたいタスクと同時に学習する。報酬はひとつ前のステップでのlossと現在のlossの差。&lt;/p&gt;
+
+&lt;p&gt;強化学習の状態には概念的にはネットワーク全体の重みとデータを用いるのが適切だがDNNでは困難である。そのため、ミニバッチをネットワークに入力したときの平均損失で代用する。&lt;/p&gt;
+
+&lt;p&gt;学習率が高くなりすぎないようにactorとcriticのネットワークを分離していたり、それぞれ別のデータで学習したりしている。&lt;/p&gt;
+
+&lt;p&gt;mnistとcifer10で実験している。どっちでも良い精度、Adamにも勝ってる。&lt;/p&gt;
+
+&lt;p&gt;強化学習万能説。&lt;/p&gt;
+
+&lt;p&gt;まあ、強化学習のパラメータを調整する手間が増えるのが難点かなっとも思う。&lt;/p&gt;
+
+&lt;p&gt;あと、あまりにもセンシティブなパラメータを学習するには初期がランダム行動過ぎてちょっと怖い。&lt;/p&gt;
+
+&lt;p&gt;事前にいくつかのパラメータで学習したデータ集めて事前学習とかしないとダメかもね。&lt;/p&gt;
+
+&lt;p&gt;浸透率を自動調整したい人とか、潜在変数の数を自動調整したい人とかにお勧めしたい手法。&lt;/p&gt;
+
+&lt;p&gt;個人的には浸透率が0になったときのlossを報酬にして、浸透率調整したら面白いんじゃねっと思ってる。&lt;/p&gt;
+
+&lt;h3 id=&quot;タグ一覧&quot;&gt;タグ一覧&lt;/h3&gt;
+
+&lt;ul&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/paper-collector-github-page/&quot;&gt;Top Page&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><summary type="html">Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159</summary></entry><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/02/01/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-02-01T00:00:00+09:00</published><updated>2020-02-01T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/02/01/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/02/01/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
+&lt;p&gt;https://arxiv.org/abs/1705.11159&lt;/p&gt;
+
+&lt;p&gt;強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。&lt;/p&gt;
+
+&lt;p&gt;具体的には、方策勾配の手法を用いて学習率を実数値で各ミニバッチごとに推定している。この強化学習は実際に解きたいタスクと同時に学習する。報酬はひとつ前のステップでのlossと現在のlossの差。&lt;/p&gt;
+
+&lt;p&gt;強化学習の状態には概念的にはネットワーク全体の重みとデータを用いるのが適切だがDNNでは困難である。そのため、ミニバッチをネットワークに入力したときの平均損失で代用する。&lt;/p&gt;
+
+&lt;p&gt;学習率が高くなりすぎないようにactorとcriticのネットワークを分離していたり、それぞれ別のデータで学習したりしている。&lt;/p&gt;
+
+&lt;p&gt;mnistとcifer10で実験している。どっちでも良い精度、Adamにも勝ってる。&lt;/p&gt;
+
+&lt;p&gt;強化学習万能説。&lt;/p&gt;
+
+&lt;p&gt;まあ、強化学習のパラメータを調整する手間が増えるのが難点かなっとも思う。&lt;/p&gt;
+
+&lt;p&gt;あと、あまりにもセンシティブなパラメータを学習するには初期がランダム行動過ぎてちょっと怖い。&lt;/p&gt;
+
+&lt;p&gt;事前にいくつかのパラメータで学習したデータ集めて事前学習とかしないとダメかもね。&lt;/p&gt;
+
+&lt;p&gt;浸透率を自動調整したい人とか、潜在変数の数を自動調整したい人とかにお勧めしたい手法。&lt;/p&gt;
+
+&lt;p&gt;個人的には浸透率が0になったときのlossを報酬にして、浸透率調整したら面白いんじゃねっと思ってる。&lt;/p&gt;
+
+&lt;h3 id=&quot;タグ一覧&quot;&gt;タグ一覧&lt;/h3&gt;
+
+&lt;ul&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;/tags/machine-learning/&quot;&gt;machine learning&lt;/a&gt;&lt;/li&gt;
+    
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/paper-collector-github-page/&quot;&gt;Top Page&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="reinforcement learning" /><category term="machine learning" /><summary type="html">Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159</summary></entry></feed>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Reinforcement Learning for Learning Rate Control | 論文まとめ用ページ</title>
+<meta name="generator" content="Jekyll v3.5.2" />
+<meta property="og:title" content="Reinforcement Learning for Learning Rate Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159" />
+<meta property="og:description" content="Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159" />
+<link rel="canonical" href="https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html" />
+<meta property="og:url" content="https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html" />
+<meta property="og:site_name" content="論文まとめ用ページ" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-04T00:00:00+09:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Reinforcement Learning for Learning Rate Control","dateModified":"2020-02-04T00:00:00+09:00","datePublished":"2020-02-04T00:00:00+09:00","url":"https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://shigayuya.github.io/paper-collector-github-page/2020/02/04/Reinforcement-Learning-for-Learning-Rate-Control.html"},"description":"Reinforcement Learning for Learning Rate Control https://arxiv.org/abs/1705.11159","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/paper-collector-github-page/assets/css/style.css?v=">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/paper-collector-github-page/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/paper-collector-github-page/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="">View On GitHub</a></li>
+          
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>論文まとめ用ページ</h1>
+          <p>テスト中1</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href=""></a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1 id="reinforcement-learning-for-learning-rate-control">Reinforcement Learning for Learning Rate Control</h1>
+<p>https://arxiv.org/abs/1705.11159</p>
+
+<p>強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。</p>
+
+<p>具体的には、方策勾配の手法を用いて学習率を実数値で各ミニバッチごとに推定している。この強化学習は実際に解きたいタスクと同時に学習する。報酬はひとつ前のステップでのlossと現在のlossの差。</p>
+
+<p>強化学習の状態には概念的にはネットワーク全体の重みとデータを用いるのが適切だがDNNでは困難である。そのため、ミニバッチをネットワークに入力したときの平均損失で代用する。</p>
+
+<p>学習率が高くなりすぎないようにactorとcriticのネットワークを分離していたり、それぞれ別のデータで学習したりしている。</p>
+
+<p>mnistとcifer10で実験している。どっちでも良い精度、Adamにも勝ってる。</p>
+
+<p>強化学習万能説。</p>
+
+<p>まあ、強化学習のパラメータを調整する手間が増えるのが難点かなっとも思う。</p>
+
+<p>あと、あまりにもセンシティブなパラメータを学習するには初期がランダム行動過ぎてちょっと怖い。</p>
+
+<p>事前にいくつかのパラメータで学習したデータ集めて事前学習とかしないとダメかもね。</p>
+
+<p>浸透率を自動調整したい人とか、潜在変数の数を自動調整したい人とかにお勧めしたい手法。</p>
+
+<p>個人的には浸透率が0になったときのlossを報酬にして、浸透率調整したら面白いんじゃねっと思ってる。</p>
+
+<h3 id="タグ一覧">タグ一覧</h3>
+
+<ul>
+    
+    <li><a href="/tags/reinforcement-learning/">reinforcement learning</a></li>
+    
+</ul>
+
+<p><a href="/paper-collector-github-page/">Top Page</a></p>
+
+
+      </section>
+
+    </div>
+
+    
+  </body>
+</html>

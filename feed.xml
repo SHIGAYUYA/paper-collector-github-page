@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://shigayuya.github.io/paper-collector-github-page/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shigayuya.github.io/paper-collector-github-page/" rel="alternate" type="text/html" /><updated>2020-03-09T04:59:19+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/feed.xml</id><title type="html">論文まとめ用ページ</title><subtitle>テスト中1</subtitle><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-03-02T00:00:00+09:00</published><updated>2020-03-02T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://shigayuya.github.io/paper-collector-github-page/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shigayuya.github.io/paper-collector-github-page/" rel="alternate" type="text/html" /><updated>2020-03-09T05:05:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/feed.xml</id><title type="html">論文まとめ用ページ</title><subtitle>テスト中1</subtitle><entry><title type="html">Reinforcement Learning for Learning Rate Control</title><link href="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html" rel="alternate" type="text/html" title="Reinforcement Learning for Learning Rate Control" /><published>2020-03-02T00:00:00+09:00</published><updated>2020-03-02T00:00:00+09:00</updated><id>https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control</id><content type="html" xml:base="https://shigayuya.github.io/paper-collector-github-page/2020/03/02/Reinforcement-Learning-for-Learning-Rate-Control.html">&lt;h1 id=&quot;reinforcement-learning-for-learning-rate-control&quot;&gt;Reinforcement Learning for Learning Rate Control&lt;/h1&gt;
 &lt;p&gt;https://arxiv.org/abs/1705.11159&lt;/p&gt;
 
 &lt;p&gt;強化学習を用いてNNの学習率を動的に調整する手法を提案した論文。&lt;/p&gt;
@@ -27,7 +27,7 @@
 
 &lt;ul&gt;
     
-    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/paper-collector-github-page/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
     
 &lt;/ul&gt;
 
@@ -60,7 +60,7 @@
 
 &lt;ul&gt;
     
-    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/paper-collector-github-page/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
     
 &lt;/ul&gt;
 
@@ -93,7 +93,7 @@
 
 &lt;ul&gt;
     
-    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/paper-collector-github-page/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
     
 &lt;/ul&gt;
 
@@ -126,9 +126,9 @@
 
 &lt;ul&gt;
     
-    &lt;li&gt;&lt;a href=&quot;/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/paper-collector-github-page/tags/reinforcement-learning/&quot;&gt;reinforcement learning&lt;/a&gt;&lt;/li&gt;
     
-    &lt;li&gt;&lt;a href=&quot;/tags/machine-learning/&quot;&gt;machine learning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/paper-collector-github-page/tags/machine-learning/&quot;&gt;machine learning&lt;/a&gt;&lt;/li&gt;
     
 &lt;/ul&gt;
 
